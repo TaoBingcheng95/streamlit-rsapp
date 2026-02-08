@@ -23,7 +23,7 @@ from utils.minio_util import list_tif, upload_minio
 
 def aie_init(placeholder):
     placeholder.write('正在初始化AI Earth资源，请稍等。。。')
-    token = 'ce58d796366f1bbe246142173d0d2d1d'
+    token = 'ce58d796366f1bbe246142173d0d2d1d' # 阿里云官方提供的测试token，过期后可以自行申请试用token替换
     aie.Authenticate(token=token)
     aie.Initialize()
     placeholder.empty()
