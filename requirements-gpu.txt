@@ -1,0 +1,10 @@
+torch
+torchvision
+opencv-python-headless
+tqdm
+
+segment-anything
+
+rasterio
+geopandas
+networkx

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Landsat 8 Level 2",
+        "gee_name": "LANDSAT_LC08_C02_T1_L2",
+        "cloud_cover_prop": "eo:cloud_cover",
+        "select_bands": ["SR_B1", "SR_B2", "SR_B3", "SR_B4", "SR_B5", "SR_B6", "SR_B7"],
+        "rename_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7"],
+        "vis_params": {"bands":["B4","B3","B2"], "min":8000, "max":15000},
+        "scale": 30,
+        "data_type": "int"
+    },
+    {
+        "name": "Sentinel-2 Level-2A",
+        "gee_name": "SENTINEL_MSIL2A",
+        "cloud_cover_prop": "eo:cloud_cover",
+        "select_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B9", "B11", "B12"],
+        "rename_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B9", "B11", "B12"],
+        "vis_params": {"bands":["B4","B3","B2"], "min":0, "max":2500},
+        "scale": 10,
+        "data_type": "int"
+    }
+]

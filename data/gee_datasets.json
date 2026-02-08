@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Landsat 8 Level 2",
+        "gee_name": "LANDSAT/LC08/C02/T1_L2",
+        "cloud_cover_prop": "CLOUD_COVER",
+        "select_bands": ["SR_B1", "SR_B2", "SR_B3", "SR_B4", "SR_B5", "SR_B6", "SR_B7"],
+        "rename_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7"],
+        "vis_params": {"bands":["B4","B3","B2"], "min":8000, "max":15000},
+        "scale": 30,
+        "data_type": "int"
+    },
+    {
+        "name": "Landsat 8 TOA Reflectance",
+        "gee_name": "LANDSAT/LC08/C02/T1_TOA",
+        "cloud_cover_prop": "CLOUD_COVER",
+        "select_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11"],
+        "rename_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11"],
+        "vis_params": {"bands":["B4", "B3", "B2"], "min":0, "max":0.25},
+        "scale": 30,
+        "data_type": "float"
+    },
+    {
+        "name": "Landsat 9 Level 2",
+        "gee_name": "LANDSAT/LC09/C02/T1_L2",
+        "cloud_cover_prop": "CLOUD_COVER",
+        "select_bands": ["SR_B1", "SR_B2", "SR_B3", "SR_B4", "SR_B5", "SR_B6", "SR_B7"],
+        "rename_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7"],
+        "vis_params": {"bands":["B4","B3","B2"], "min":8000, "max":15000},
+        "scale": 30,
+        "data_type": "int"
+    },
+    {
+        "name": "Landsat 9 TOA Reflectance",
+        "gee_name": "LANDSAT/LC09/C02/T1_TOA",
+        "cloud_cover_prop": "CLOUD_COVER",
+        "select_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11"],
+        "rename_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11"],
+        "vis_params": {"bands":["B4", "B3", "B2"], "min":0, "max":0.25},
+        "scale": 30,
+        "data_type": "float"
+    },
+    {
+        "name": "Sentinel-2 Level-2A",
+        "gee_name": "COPERNICUS/S2_SR_HARMONIZED",
+        "cloud_cover_prop": "CLOUDY_PIXEL_PERCENTAGE",
+        "select_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B9", "B11", "B12"],
+        "rename_bands": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B9", "B11", "B12"],
+        "vis_params": {"bands":["B4","B3","B2"], "min":0, "max":2500},
+        "scale": 10,
+        "data_type": "int"
+    }
+]

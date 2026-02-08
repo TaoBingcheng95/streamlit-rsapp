@@ -1,0 +1,122 @@
+[
+    {
+        "name": "ARVI",
+        "text": "大气阻抗植被指数",
+        "formula": "({NIR}-({RED}-({BLUE}-{RED})))/({NIR}+{RED}-({BLUE}-{RED}))"
+    },
+    {
+        "name": "BI",
+        "text": "亮度指数",
+        "formula": "sqrt(({RED}**2+{GREEN}**2)/2)"
+    },
+    {
+        "name": "DVI",
+        "text": "差值植被指数",
+        "formula": "{NIR}-{RED}"
+    },
+    {
+        "name": "GEMI",
+        "text": "全球环境监测指数",
+        "formula": "(2*({NIR}*{NIR}-{RED}*{RED})+1.5*{NIR}+0.5*{RED})/({NIR}+{RED}+0.5)*(1-0.25*(2*({NIR}*{NIR}-{RED}*{RED})+1.5*{NIR}+0.5*{RED})/({NIR}+{RED}+0.5))-(({RED}-0.125)/(1-{RED}))"
+    },
+    {
+        "name": "GNDVI",
+        "text": "绿色归一化植被指数",
+        "formula": "({NIR}-{GREEN})/({NIR}+{GREEN})"
+    },
+    {
+        "name": "IPVI",
+        "text": "红外百分比植被指数",
+        "formula": "{NIR}/({NIR}+{RED})"
+    },
+    {
+        "name": "MNDWI",
+        "text": "改进归一化水体指数",
+        "formula": "({GREEN}-{MIR})/({GREEN}+{MIR})"
+    },
+    {
+        "name": "MSAVI",
+        "text": "去土壤调整植被指数",
+        "formula": "(2*{NIR}+1-sqrt((2*{NIR}+1)**2-8*({NIR}-{RED})))/2"
+    },
+    {
+        "name": "MSAVI2",
+        "text": "去土壤调整植被指数2",
+        "formula": "0.5*(2*{NIR}+1-sqrt((2*{NIR}+1)**2-8*({NIR}-{RED})))"
+    },
+    {
+        "name": "NDMI",
+        "text": "归一化湿度指数",
+        "formula": "({NIR}-{SWIR})/({NIR}+{SWIR})"
+    },
+    {
+        "name": "NDPI",
+        "text": "归一化物候指数",
+        "formula": "({MIR}-{GREEN})/({MIR}+{GREEN})"
+    },
+    {
+        "name": "NDTI",
+        "text": "归一化差异浊度指数",
+        "formula": "({RED}-{GREEN})/({RED}+{GREEN})"
+    },
+    {
+        "name": "NDVI",
+        "text": "归一化植被指数",
+        "formula": "({NIR}-{RED})/({NIR}+{RED})"
+    },
+    {
+        "name": "NDWI",
+        "text": "归一化水分指数",
+        "formula": "({NIR}-{MIR})/({NIR}+{MIR})"
+    },
+    {
+        "name": "NDWI2",
+        "text": "归一化水分指数2",
+        "formula": "({GREEN}-{NIR})/({GREEN}+{NIR})"
+    },
+    {
+        "name": "PVI",
+        "text": "垂直植被指数",
+        "formula": "({NIR}-a*{Red}-b)/sqrt(1+a*a)",
+        "factors": {
+            "a": 0.3,
+            "b": 0.5
+        }
+    },
+    {
+        "name": "RVI",
+        "text": "比值植被指数",
+        "formula": "{NIR}/{RED}"
+    },
+    {
+        "name": "SAVI",
+        "text": "土壤调整植被指数",
+        "formula": "(1+L)*({NIR}-{RED})/({NIR}+{RED}+L)",
+        "factors": {
+            "L": 0.5
+        }
+    },
+    {
+        "name": "TNDVI",
+        "text": "转换型归一化植被指数",
+        "formula": "sqrt(({NIR}-{RED})/({NIR}+{RED})+0.5)"
+    },
+    {
+        "name": "TSAVI",
+        "text": "转换土壤调整植被指数",
+        "formula": "(s*({NIR}-s*{RED}-a))/(a*{NIR}+{RED}-a*s+X*(1+s*s))",
+        "factors": {
+            "a": 0.5,
+            "s": 0.5,
+            "X": 0.08
+        }
+    },
+    {
+        "name": "WDVI",
+        "text": "加权差分植被指数",
+        "formula": "{NIR}-g*{RED}",
+        "factors": {
+            "g": 1.5
+        }
+    }
+]
